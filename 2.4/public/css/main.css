@@ -1,0 +1,106 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app-wrapper,
+.feed-list-wrapper,
+.content-wrapper,
+.items-list {
+  height: 100%;
+}
+
+.feed-list-wrapper,
+.items-list,
+.reading-wrapper {
+  overflow: auto;
+}
+
+.app-wrapper {
+  
+  background-color: white;
+  overflow:hidden;
+  /* margin-left: 250px; */
+}
+
+.feed-list-wrapper {
+  position: absolute;
+  width: 250px;
+  background-color: #f1f3f5;
+}
+
+.content-wrapper {
+  margin-left: 250px;
+}
+
+/* .content-wrapper .row .col:first-child {
+  border-right: 1px solid hsl(0, 0%, 41%);;
+} */
+
+.feed-list-wrapper .feed-list {
+  position: relative;
+  padding-top: 20px;
+}
+
+.feed-list h5,
+.items-list h5 {
+  color: hsl(0, 0%, 41%);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.feed-list .list-group .list-group-item,
+.items-list .list-group .list-group-item {
+  border: 0;
+  background-color: transparent;
+  padding: .45em 1.25rem;
+  margin: 1px auto;
+}
+
+.feed-list .list-group .list-group-item.active {
+  background-color: white;
+  color: black;
+}
+
+.feed-list .feed-list-options {
+  position: absolute;
+  top: 0;
+}
+
+.feed-list span {
+  display: none;
+}
+
+.feed-list.edit-mode span {
+  display: inline;
+}
+
+.feed-list.edit-mode .list-group .list-group-item,
+.feed-list.edit-mode .list-group .list-group-item.active {
+  background-color: #dc3545;
+  color: white;
+}
+
+.items-list {
+  padding-top: 20px;
+  background-color: white;
+}
+
+.items-list .list-group .list-group-item.active {
+  background-color: #f1f3f5;
+  color: black;
+}
+
+.items-list .list-group .list-group-item.unread {
+  font-weight: bold;
+}
+
+.reading-wrapper {
+  padding-top: 20px;
+}
